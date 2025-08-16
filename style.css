@@ -603,6 +603,8 @@ input[type='checkbox']{
     position: relative;
     height: 600px;
     margin-top: -16REM;
+margin-left:0;
+
 }
 
 .about_img_main {
@@ -675,7 +677,7 @@ input[type='checkbox']{
     }
     .about_img{
     position: relative;
-    margin-left: 0rem;
+    margin-left:0;
    }
 }
 
