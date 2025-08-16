@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/c03ab062e5.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css" />
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <!-- ------------------Swiper Css----------------- -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+     <!-- =====================================Style Switcher===================================== -->
+     <input type="radio" name="color" id="color-1">
+     <input type="radio" name="color" id="color-2">
+     <input type="radio" name="color" id="color-3">
+     <input type="radio" name="color" id="color-4">
+     <input type="radio" name="color" id="color-5">
+     <input type="radio" name="color" id="color-6">
+     <input type="radio" name="color" id="color-7">
+     <input type="radio" name="color" id="color-8">
+     <input type="radio" name="color" id="color-9">
+     <input type="radio" name="color" id="color-10">
+     <input type="checkbox" name="" id="toggler">
+     <input type="checkbox" name="" id="day-night">
+ 
+     <div class="style_switcher">
+       <label for="toggler" class="style_switcher_toggler">
+         <i class="fa-solid fa-gear fa-spin"></i>
+       </label>
+       <label for="day-night" class="style_switcher_theme">
+         <i class="fa-solid fa-sun"></i>
+         <i class="fa-solid fa-moon"></i>
+       </label>
+ 
+       <h3 class="style_switcher_title">Theme Colors</h3>
+       <div class="style_switcher_colors">
+         <label for="color-1" class="color-1 color"></label>
+         <label for="color-2" class="color-2 color"></label>
+         <label for="color-3" class="color-3 color"></label>
+         <label for="color-4" class="color-4 color"></label>
+         <label for="color-5" class="color-5 color"></label>
+         <label for="color-6" class="color-6 color"></label>
+         <label for="color-7" class="color-7 color"></label>
+         <label for="color-8" class="color-8 color"></label>
+         <label for="color-9" class="color-9 color"></label>
+         <label for="color-10" class="color-10 color"></label>
+ 
+       </div>
+     </div>
+    <!-- ===============================Header and Nav bar section=============================== -->
+    <header class="header">
+      <nav class="nav">
+        <div class="navbar">
+          <div class="navbar_logo">
+            <div class="nav_bar_heading">
+              <h3>Kanak Neema</h3>
+            </div>
+            <div class="nav_menu_btn" id="menu_btn">
+              <i class="ri-menu-line"></i>
+            </div>
+          </div>
+          <ul class="nav_links" id="nav-links">
+            <li class="nav__items">
+              <a href="#home" class="nav__links active__link">Home</a>
+            </li>
+
+            <li class="nav__items">
+              <a href="#about" class="nav__links">About</a>
+            </li>
+
+            <li class="nav__items">
+              <a href="#services" class="nav__links">Services</a>
+            </li>
+
+            <li class="nav__items">
+              <a href="#skills" class="nav__links">Skills</a>
+            </li>
+
+            <li class="nav__items">
+              <a href="#portfolio" class="nav__links">Projects</a>
+            </li>
+
+            <li class="nav__items">
+              <a href="#contact" class="nav__links">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main class="main">
+      <!-- =============================Home Section================================= -->
+      <section class="home" id="home">
+        <div class="home_container container grid">
+          <div class="home_details">
+            <span class="home_small home_ani">Hello</span>
+            <h1 class="home_name home_ani">
+              <span>I'm</span> Kanak Neema <br />
+              a <span>Frontend Web Developer</span>
+            </h1>
+            <p class="home_description home_ani">
+              Currently pursuing a B.Tech in Computer Science and Engineering at Sushila Devi Bansal College, Indore.
+              Passionate about exploring core concepts of 
+              <span>Information Technology</span> & <span>Computer Science....</span>
+            </p>
+            <div class="home_links">
+              <div class="home_ani1">
+                <a
+                  href="https://www.instagram.com/kanak_neema_?igsh=MWlsa2kxMGEybDQ1Ng=="
+                  target="_blank"
+                >
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
+              </div>
+              <div class="home_ani1">
+                <a
+                  href="https://www.linkedin.com/in/kanak-neema-74221b274?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                  target="_blank"
+                >
+                  <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+              </div>
+              <div class="home_ani1">
+                <a href="https://github.com/kanakneema22" target="_blank">
+                  <i class="fa-brands fa-github"></i>
+                </a>
+              </div>
+            </div>
+            <div class="home_btns">
+              <a href="#contact" class="btn">Hire Me</a>
+              <a href="https://drive.google.com/file/d/1QbgkF4zCy9YrtcygxGKBs-8EcSnnuZ-g/view?usp=drivesdk" target="_blank" class="btn btn_transparant">Download CV</a>
+            </div>
+          </div>
+          <div class="home_img">
+            <img
+              src="assets/images/main.png"
+              class="home_main_img home_ani_img op"
+              alt="" width=100% height=100%
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- =============================About Section======================= -->
+      <section class="about section" id="about">
+        <div class="about_container container grid">
+          <div class="about_img">
+            <img
+              src="assets/images/main.png"
+              alt=""
+              class="about_img_main"
+            />
+            
+          </div>
+          <div class="about_content">
+            <p class="about_who">Who am I?</p>
+            <h1 class="about_head">
+              I'm Kanak Neema, a Frontend Web Developer. 
+            </h1>
+            <p class="about_detail">
+              I am currently pursuing a B.Tech degree in Computer Science and Engineering at Sushila Devi Bansal College. Driven by a strong passion for technology and a deep interest in innovation, I aim to build a successful career as a Full Stack Developer.
+
+I am actively honing my skills in Frontend Development, with hands-on experience in HTML, CSS, and JavaScript. Each project I take on is an opportunity to challenge myself, improve my precision, and deliver seamless, user-friendly experiences. I’m committed to continuous learning and thrive on transforming ideas into efficient, interactive web solutions.
+            </p>
+            <ul class="about_data">
+              <li class="about_item">
+                <h3 class="data_title">Name:</h3>
+                <span class="data_description">Kanak Neema</span>
+              </li>
+              <li class="about_item">
+                <h3 class="data_title">From:</h3>
+                <span class="data_description">Indore,Madhya Pradesh</span>
+              </li>
+              <li class="about_item">
+                <h3 class="data_title">Email:</h3>
+                <span class="data_description data_description_link"
+                  >kanakneema102@gmail.com</span
+                >
+              </li>
+            </ul>
+            <div class="about_btns">
+              <a href="https://drive.google.com/file/d/1QbgkF4zCy9YrtcygxGKBs-8EcSnnuZ-g/view?usp=drivesdk" target="_blank" class="btn">Download CV</a>
+
+              <div class="about_social_btns">
+                <a
+                  href="https://www.instagram.com/kanak_neema_?igsh=MWlsa2kxMGEybDQ1Ng=="
+                  class="about_social_btn"
+                  target="_blank"
+                >
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/kanak-neema-74221b274?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                  class="about_social_btn"
+                  target="_blank"
+                >
+                  <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+                <a
+                  href="https://github.com/kanakneema22"
+                  target="_blank"
+                  class="about_social_btn"
+                >
+                  <i class="fa-brands fa-github"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================================Services Section================================== -->
+      <section class="services section" id="services">
+        <p class="service_head">SERVICES</p>
+        <h1 class="service_main_header">What Can I do for you</h1>
+        <div class="wrapper container">
+          <i id="left" class="fa-solid fa-angle-left"></i>
+          <ul class="carousel">
+            <li class="card">
+              <div class="img">
+                <img
+                  src="assets/images/coding.png"
+                  alt="img"
+                  draggable="false"
+                />
+              </div>
+              <h2>Web Development</h2>
+              <span
+                >Our web development service creates responsive, user-friendly
+                websites tailored to your needs for optimal online
+                presence.</span
+              >
+            </li>
+           
+            <li class="card">
+              <div class="img">
+                <img
+                  src="assets/images/ui-design.png"
+                  alt="img"
+                  draggable="false"
+                />
+              </div>
+              <h2>Frontend Development</h2>
+              <span>
+                Our frontend development service delivers interactive, and
+                user-friendly web interfaces for an enhanced user experience.
+              </span>
+            </li>
+            <li class="card">
+              <div class="img">
+                <img src="assets/images/web.png" alt="img" draggable="false" />
+              </div>
+              <h2>Web Design</h2>
+              <span
+                >Our web design service creates visually stunning, user-friendly
+                websites that enhance user engagement and experience.</span
+              >
+            </li>
+            <li class="card">
+              <div class="img">
+                <img
+                  src="assets/images/creator.png"
+                  alt="img"
+                  draggable="false"
+                />
+              </div>
+              <h2>Content Creation</h2>
+              <span
+                >Our content creation service delivers engaging, high-quality
+                content to the audience, boosting engagement and brand
+                visibility.</span
+              >
+            </li>
+          </ul>
+          <i id="right" class="fa-solid fa-angle-right"></i>
+        </div>
+      </section>
+
+      <!-- ===================================Skills section====================== -->
+      <section class="skills container" id="skills">
+        <div class="skill_sectionc section">
+          <p class="skill_subhead">My Talent</p>
+          <h1 class="skill_head section_title">Professional Skills</h1>
+          <div class="skills_boxs">
+            <div class="skill_box">
+              <i class="fa-brands fa-html5 html"></i>
+              <p class="skill_box_name html">HTML</p>
+            </div>
+            <div class="skill_box">
+              <i class="fa-brands fa-css3-alt css"></i>
+              <p class="skill_box_name css">CSS</p>
+            </div>
+            <div class="skill_box">
+              <i class="fa-brands fa-js js"></i>
+              <p class="skill_box_name js">JavaScript</p>
+            </div>
+            <div class="skill_box">
+             <i class="fa-brands fa-react u"></i>
+              <p class="skill_box_name py">React.JS</p>
+            </div>
+              <div class="skill_box">
+          <i class="fa-brands fa-bootstrap b"></i>
+              <p class="skill_box_name py">Bootstrap</p>
+            </div>
+              <div class="skill_box">
+            <i class="fa-brands fa-sass s"></i>
+              <p class="skill_box_name py">SASS</p>
+            </div>
+              <div class="skill_box">
+            <i class="ti ti-brand-tailwind T"></i>
+              <p class="skill_box_name py">Tailwind CSS</p>
+            </div>
+            <div class="skill_box">
+              <i class="fa-regular fa-copyright c"></i>
+              <p class="skill_box_name c">C Language</p>
+            </div>
+          </div>
+          </div>
+      </section>
+
+       <!-- =======================================Projects Section================================= -->
+       <section class="portfolio container" id="portfolio">
+        <div class="projects_container section">
+          <h1 class="projects_heading">My <span>Latest Projects</span></h1>
+          <div class="projects_boxs grid">
+            <div class="recent_projects">
+              <img src="assets/images/1.png" alt="" />
+              <div class="projects_details">
+                <h4>Portfolio Clone</h4>
+                <p>
+                This is a simple portfolio clone with a clean and modern design.
+                </p>
+                <a
+                  href="https://portfolio-clone-rho.vercel.app/"
+                  target="_blank"
+                  ><i class="fa-solid fa-arrow-up-right-from-square"></i
+                ></a>
+              </div>
+            </div>
+            <div class="recent_projects">
+              <img src="assets/images/2.png" alt="" />
+              <div class="projects_details">
+                <h4>Productivity-Dashboard</h4>
+                <p>Stay focused and track your progress with the Productivity Dashboard.</p>
+                <a
+                  href="https://hackthone-one.vercel.app/"
+                  target="_blank"
+                  ><i class="fa-solid fa-arrow-up-right-from-square"></i
+                ></a>
+              </div>
+            </div>
+            <div class="recent_projects">
+              <img
+                src="assets/images/3.png"
+                alt=""
+              />
+              <div class="projects_details">
+                <h4>Love-Babbar-Clone</h4>
+                <p>
+                   This is a simple Love Babbar website clone with a clean and modern design.
+                </p>
+                <a
+                  href="https://github.com/rishikgoud/Hotel-Landing-page"
+                  target="_blank"
+                  ><i class="fa-solid fa-arrow-up-right-from-square"></i
+                ></a>
+              </div>
+            </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <!-- ===========================================Contact Section=================================== -->
+      <section class="contact section" id="contact">
+        <div class="section_contact container">
+          <p class="contact_subhead">Let's Talk Together</p>
+          <h1 class="contact_title">Contact Me</h1>
+          <div class="contact_content">
+            <div class="contact_details">
+              <div class="contact_info_boxes">
+                <div class="contact_icons">
+                  <i class="fa-solid fa-phone"></i>
+                </div>
+                <div class="contact_icons_details">
+                  <h3>Call Us</h3>
+                  <p>+91 8269250333</p>
+                </div>
+              </div>
+              <div class="contact_info_boxes">
+                <div class="contact_icons">
+                  <i class="fa-solid fa-envelope"></i>
+                </div>
+                <div class="contact_icons_details">
+                  <h3>Email Us</h3>
+                  <p>kanakneema102@gmail.com</p>
+                </div>
+              </div>
+              <div class="contact_info_boxes">
+                <div class="contact_icons">
+                  <i class="fa-solid fa-location-dot"></i>
+                </div>
+                <div class="contact_icons_details">
+                  <h3>Address</h3>
+                  <p>VIP Parspar Nagar,Indore(M.P)</p>
+                </div>
+              </div>
+            </div>
+            <div class="contact_form">
+              <form action="">
+                <div class="form_group">
+                  <div class="form_input">
+                    <input
+                      type="text"
+                      placeholder="Name"
+                      class="input_control"
+                    />
+                  </div>
+                  <div class="form_input">
+                    <input
+                      type="text"
+                      placeholder="Email"
+                      class="input_control"
+                    />
+                  </div>
+                </div>
+                <div class="form_input">
+                  <input
+                    type="text"
+                    placeholder="subject"
+                    class="input_control"
+                  />
+                </div>
+                <div class="form_input">
+                  <textarea
+                    name=""
+                    id=""
+                    placeholder="Message"
+                    cols="30"
+                    rows="4"
+                    class="input_control textarea"
+                  ></textarea>
+                </div>
+                <button class="btn contact_btn">Send Message</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      
+      <!-- =========================================footer section================================== -->
+      <footer class="footer" id="footer">
+        <div class="footer_container container">
+          <div class="footer_description">
+            <p class="footer_copyright">
+              &copy; 2025 Kanak Neema. All Rights are Reserved
+              </p>
+            
+        </div>
+         <div class="footer_social_btns">
+          <a
+            href="https://www.instagram.com/kanak_neema_?igsh=MWlsa2kxMGEybDQ1Ng=="
+            class="footer_social_btn"
+            target="_blank"
+          >
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/kanak-neema-74221b274?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+            class="footer_social_btn"
+            target="_blank"
+          >
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+          <a
+            href="https://github.com/kanakneema22"
+            target="_blank"
+            class="footer_social_btn"
+          >
+            <i class="fa-brands fa-github"></i>
+          </a>
+        </div>
+      </div>
+      </footer>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
